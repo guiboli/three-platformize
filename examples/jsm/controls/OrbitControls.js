@@ -13,7 +13,7 @@ const pageOffsetAdapter = ( event ) => {
 
 	if ( event.pageX === undefined ) {
 
-		console.warn( '[three adapter]', 'no \'pageX\', will use \'x\'', event );
+		console.debug( '[three adapter]', 'no \'pageX\', will use \'x\'', event );
 		if ( event.x !== undefined ) {
 
 			event.pageX = event.x;
@@ -28,7 +28,7 @@ const pageOffsetAdapter = ( event ) => {
 
 	if ( event.pageY === undefined ) {
 
-		console.warn( '[three adapter]', 'no \'pageY\', will use \'y\'', event );
+		console.debug( '[three adapter]', 'no \'pageY\', will use \'y\'', event );
 		if ( event.y !== undefined ) {
 
 			event.pageY = event.y;
